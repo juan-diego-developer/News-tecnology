@@ -1,4 +1,4 @@
- *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -120,17 +120,25 @@ ul {
     background: #e5e3e6 ;
     color: black;
     text-shadow: none;
-    font-size: medium;
+    font-size: x-large;
     border-radius: 10px;
     max-width: 80%;
+    padding: 5px 5px 5px 5px;
 
 }
+
+@media screen and (max-width: 600px) {
+    .showcase p {
+        font-size: medium;
+    }
+}
+
 
 /* news cards */
 
 .grid-container {
 
-    /* display: grid; */
+    display: grid;
     /* grid-template-columns: 1fr,2fr,3fr,4fr; */
 }
 
@@ -159,90 +167,119 @@ ul {
 }
 
 .news-cards-1 img {
-    width: 80%;
-    height: 250px;
-    margin-left: 2rem;
+    width: 70%;
+    height: 300px;
+    margin-left: 4rem;
     box-shadow: 0px 1px 30px;
 }
 
 .news-cards-2 img {
-    width: 80%;
-    height: 250px;
-    margin-left: 2rem;
+    width: 70%;
+    height: 300px;
+    margin-left: 4rem;
     box-shadow: 0px 1px 30px;
 }
 
 .news-cards-3 img {
     margin-top: 40px;
-    width: 80%;
-    height: 250px;
-    margin-left: 2rem;
+    width: 70%;
+    height: 300px;
+    margin-left: 4rem;
     box-shadow: 0px 1px 30px;
 }
 
 .news-cards-4 img {
     margin-top: 40px;
-    width: 80%;
-    height: 250px;
-    margin-left: 2rem;
+    width: 70%;
+    height: 300px;
+    margin-left: 4rem;
     box-shadow: 0px 1px 30px;
 }
 
 .news-cards-5 img {
     margin-top: 40px;
-    width: 80%;
-    height: 250px;
-    margin-left: 2rem;
+    width: 70%;
+    height: 300px;
+    margin-left: 4rem;
     box-shadow: 0px 1px 30px;
 }
 
 .news-cards-6 img {
     margin-top: 40px;
-    width: 80%;
-    height: 250px;
-    margin-left: 2rem;
+    width: 70%;
+    height: 300px;
+    margin-left: 4rem;
     box-shadow: 0px 1px 30px;
 }
 
+@media screen and (max-width: 600px) {
+    .news-cards-1 img,
+    .news-cards-2 img,
+    .news-cards-3 img,
+    .news-cards-4 img,
+    .news-cards-5 img,
+    .news-cards-6 img {
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: auto;
+    }
+}
+
 .grid-container h3 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 15px 0;
+    padding-left: 15px;
 }
 
 .grid-container a {
-    padding: 10px 0;
+    padding: 10px 10px;
     color: cornsilk;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
 }
 
+.grid-container p {
+    padding-left: 15px;
+}
+
 .grid-container a :hover {
     text-decoration: underline;
 }
 
-/* cards-banner-one  */
+/* cards-banner-one "pendiente por revisar"  */
 .cards-banner-one {
-    width: 90%;
-    height: 350px;
-    background-image: url(https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_960_720.jpg);
+    width: 100%;
+    height: 400px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813_960_720.jpg);
+    background-repeat: repeat-y;
     margin-bottom: 40px;
-    
+    margin-top: 40px;
 }
 
-.cards-banner-one .container {
+
+.cards-banner-one .content {
     
-     /* width: 100%; */
-    /* max-width: 300px;  */
-    padding: 60px 0 0 10px;
+    width: 40%;
+    padding: 50px 0 0 10px;
     color: white;
 
 }
 
+@media screen and (max-width: 600px) {
+    .cards-banner-one .content {
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: auto;
+    }
+}
+
 .cards-banner-one p {
     padding: 30px 30rem 15px 15px;
-    /* padding-right: 30rem;
-    padding-bottom: 30px; */
+    padding-right: 0rem;
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -251,60 +288,121 @@ ul {
     }
 }
 
-/* cards-1 */
+/* cards-two */
 
-.grid-container-1 {
+.grid-container-two {
 
     margin-top: 100px;
     display: grid;
     grid-template-areas:
         "news-cards-1 news-cards-2 news-cards-3 news-cards-4";
-    grid-gap: 10px;
-    padding: 5px;
+    grid-gap: 100px;
+    padding-bottom: 60px;   
 }
 
 @media screen and (max-width: 600px) {
-    .grid-container-1 {
+    .grid-container-two {
         display: grid;
         grid-template-areas:
-            "news-cards-1" 
-            "news-cards-2"
-            "news-cards-3" 
-            "news-cards-4";
+            "news-cards-1-1" 
+            "news-cards-2-2"
+            "news-cards-3-3" 
+            "news-cards-4-4";
     }
 }
 
 .news-cards-1-1 img {
-    width: 80%;
+    margin-top: 20px;
+    width: 100%;
     height: 250px;
-    margin-left: 1rem;
     /* box-shadow: 0px 1px 30px; */
 }
 
 .news-cards-2-1 img {
-    margin-top: 40px;
-    width: 80%;
+    margin-top: 20px;
+    width: 100%;
     height: 250px;
-    margin-left: 1rem;
+    
     /* box-shadow: 0px 1px 30px; */
 }
 
 .news-cards-3-1 img {
-    /* margin-top: 40px; */
-    width: 80%;
+    margin-top: 20px;
+    width: 100%;
     height: 250px;
-    margin-left: 2rem;
     /* box-shadow: 0px 1px 30px; */
 }
 
 .news-cards-4-1 img {
-    margin-top: 40px;
-    width: 80%;
+    margin-top: 20px;
+    width: 100%;
     height: 250px;
-    margin-left: 2rem;
     /* box-shadow: 0px 1px 30px; */
 }
 
+.news-cards-1-1, .news-cards-2-1, .news-cards-3-1, .news-cards-4-1 {
+    background: white;
+    color: black;
+}
+
+/* cards-banner-two "pendientes por ajustar" */
+.cards-banner-two {
+    width: 100%;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80) ;
+    background-repeat: repeat-y;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.cards-banner-two .content {
+    
+    width: 40%;
+    padding: 50px 0 0 10px;
+    color: white;
+
+}
+
+@media screen and (max-width: 600px) {
+    .cards-banner-two .content {
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: auto;
+    }
+}
+
+.cards-banner-two p {
+    padding: 30px 30rem 15px 15px;
+    padding-right: 0rem;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .cards-banner-two p {
+        padding-right: 15px;
+    }
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
 /* footer */
 
 .footer {
