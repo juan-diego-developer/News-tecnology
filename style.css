@@ -38,6 +38,7 @@ ul {
     align-items: center;
     height: 60px;
     padding: 20px 0;
+    
 }
 
 /* style icon of the proyect */
@@ -72,10 +73,10 @@ ul {
     .nav-main ul , .nav-menu {
     display: block;
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 0;
     background: black ;
-    height: 50%;
+    height: 58%;
     padding: 20px;
     opacity: 0.9;
     transform: translatex(-400px);
@@ -345,11 +346,11 @@ ul {
 
 .grid-container-two {
 
-    margin-top: 100px;
+    margin-top: 50px;
     display: grid;
     grid-template-areas:
-        "news-cards-1 news-cards-2 news-cards-3 news-cards-4";
-    grid-gap: 100px;
+        "news-cards-1-1 news-cards-2-1 news-cards-3-1 news-cards-4-1";
+    grid-gap: 40px;
     padding-bottom: 60px;   
 }
 
@@ -357,8 +358,8 @@ ul {
     .grid-container-two {
         display: grid;
         grid-template-areas:
-            "news-cards-1-1 news-cards-2-2" 
-            "news-cards-3-3 news-cards-4-4";
+            "news-cards-1-1 news-cards-2-1" 
+            "news-cards-3-1 news-cards-4-1";
     }
 
 }
@@ -368,10 +369,15 @@ ul {
         display: grid;
         grid-template-areas:
             "news-cards-1-1" 
-            "news-cards-2-2"
-            "news-cards-3-3" 
-            "news-cards-4-4";
+            "news-cards-2-1"
+            "news-cards-3-1" 
+            "news-cards-4-1";
     }
+}
+
+.grid-container-two h3{
+    text-shadow: 1px 1px ;
+    align-content:center;
 }
 
 
@@ -563,18 +569,34 @@ ul {
 }
 
 
-/* pag wed development */
+/* pag second */
 
 .pag-development {
     background: white;
     margin-left: 50px;
     margin-right: 50px;
+    border-radius: 20px;
+    /* box-shadow: 0px 1px 10px;  */
+}
+
+@media screen and (max-width: 600px) {
+    .pag-development {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 .header-pag-1 h1 {
-    padding-left: 50px;
-    align-items: center;
-    justify-content: center;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-pag-1 h1 {
+        padding-top: 15px;
+        padding-left: 2px;
+        font-size: 2rem;
+    }
 }
 
 .header-pag-1 {
@@ -584,8 +606,28 @@ ul {
     margin-top: 30px;
 }
 
-#img-principal {
+@media screen and (max-width: 600px) {
+    .header-pag-1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.header-pag-1 img {
     padding-bottom: 30px;
+    margin-top: 20px;
+    width: 92%;
+    height: 500px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-pag-1 img{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        height: 300px;
+    }
 }
 
 .news-one {
@@ -597,3 +639,6 @@ ul {
 .news-one h2 {
     padding-left: 50px;
 }
+
+
+
